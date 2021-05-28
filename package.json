@@ -1,12 +1,15 @@
 {
   "name": "@askiggy/stardust",
-  "version": "0.0.2",
-  "description": "Iggy frontend component library",
+  "version": "0.0.3",
+  "private": true,
+  "description": "Iggy frontend component library and styleguide",
   "main": "index.js",
   "files": [
     "styles",
     "fonts"
   ],
   "author": "Iggy <support@askiggy.com>",
-  "license": "MIT"
+  "dependencies": {
+    "webpack": "^5.35.0"
+  }
 }

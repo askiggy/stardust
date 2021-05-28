@@ -8,13 +8,13 @@ input[type='search'] {
   height: 32px;
   margin: 0;
   padding: 0 $spacing-xs;
-  transition-property: border, color, outline, background-color, box-shadow;
+  transition-property: border-color, color, outline, background-color,
+    box-shadow;
   transition-duration: $animate-fast;
-  transition-timing-function: linear;
+  transition-timing-function: ease;
 
   &:focus {
     border-color: $brand-primary;
-    box-shadow: 0 0 0 1px $brand-primary;
     color: $brand-primary;
     outline: transparent;
   }

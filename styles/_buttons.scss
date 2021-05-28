@@ -26,8 +26,8 @@ button,
   padding: $spacing-xs $spacing-lg;
   text-align: center;
   transition-duration: $animate-fast;
-  transition-property: border-color, color, opacity, background-color,
-    box-shadow;
+  transition-property: border, color, opacity, background-color, box-shadow,
+    outline;
   transition-timing-function: ease;
   white-space: nowrap;
 
@@ -45,6 +45,7 @@ button,
   &:hover {
     background-color: $brand-primary;
     cursor: pointer;
+
     .btn-icon {
       opacity: 1;
     }
@@ -55,7 +56,8 @@ button,
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px currentColor;
+    border-color: $brand-secondary-dark;
+    box-shadow: inset 0 0 0 1px $brand-secondary-dark;
     outline: none;
   }
 
@@ -82,7 +84,8 @@ button,
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px darken($brand-callout, 20%);
+    border-color: $brand-secondary-dark;
+    box-shadow: inset 0 0 0 1px $brand-secondary-dark;
   }
 }
 
