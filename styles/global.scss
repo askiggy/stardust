@@ -1,6 +1,15 @@
 @import 'variables';
 @import 'normalize';
 @import 'scrollbars';
+@import 'layout';
+@import 'typography';
+@import 'utils';
+@import 'system';
+@import 'links';
+@import 'buttons';
+@import 'lists';
+@import 'forms';
+@import 'tooltip';
 
 html:focus-within {
   scroll-behavior: smooth;
@@ -13,26 +22,16 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  flex: 1 1 auto;
-  img {
-    display: block;
-    width: 100%;
-  }
-}
-
 img,
 picture {
   display: block;
   max-width: 100%;
 }
 
-@import 'layout';
-@import 'typography';
-@import 'utils';
-@import 'system';
-@import 'links';
-@import 'buttons';
-@import 'lists';
-@import 'forms';
-@import 'tooltip';
+main {
+  flex: 1 1 auto;
+
+  img {
+    width: 100%;
+  }
+}

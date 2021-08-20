@@ -8,9 +8,8 @@ input[type='search'] {
   height: 32px;
   margin: 0;
   padding: 0 $spacing-xs;
-  transition-property: border-color, color, outline, background-color,
-    box-shadow;
   transition-duration: $animate-fast;
+  transition-property: border-color, color, outline, background-color, box-shadow;
   transition-timing-function: ease;
 
   &:focus {

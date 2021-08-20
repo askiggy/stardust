@@ -7,8 +7,8 @@ $scrollbarSize: 6px;
     width: $scrollbarSize;
   }
 
-  scrollbar-width: thin;
   scrollbar-color: $thumbBG $scrollbarBG;
+  scrollbar-width: thin;
 
   &::-webkit-scrollbar-track {
     background: $scrollbarBG;

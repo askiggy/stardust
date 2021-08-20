@@ -8,9 +8,9 @@ $tooltip-arrow-size: 6px;
     bottom: 100%;
     display: block;
     left: 50%;
-    position: absolute;
-    pointer-events: none;
     opacity: 0;
+    pointer-events: none;
+    position: absolute;
     transition: none;
     transition-delay: 0.1s;
   }

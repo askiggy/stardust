@@ -1,12 +1,12 @@
 .system-message {
+  background-color: rgba(0, 0, 0, 0.15);
   border-radius: $border-radius-base;
   color: #333;
-  padding: $spacing-base;
   margin: $spacing-base 0;
-  background-color: rgba(0, 0, 0, 0.15);
+  padding: $spacing-base;
 
   &.error {
-    color: rgba(200, 0, 0, 1);
     background-color: rgba(200, 0, 0, 0.15);
+    color: rgba(200, 0, 0, 1);
   }
 }

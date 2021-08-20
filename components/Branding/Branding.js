@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './Branding.module.scss';
 
-const assets = {
-  logoDefault: 'iggy-logo.svg',
-  logoWhite: 'iggy-logo-white.svg',
-  iconDefault: 'iggy-icon.svg',
-  iconWhite: 'iggy-icon-white.svg'
-}
+// const assets = {
+//   logoDefault: 'iggy-logo.svg',
+//   logoWhite: 'iggy-logo-white.svg',
+//   iconDefault: 'iggy-icon.svg',
+//   iconWhite: 'iggy-icon-white.svg'
+// };
 
 function Branding() {
   return (

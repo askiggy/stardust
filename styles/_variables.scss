@@ -1,15 +1,17 @@
 // Fonts
-$font-stack: 'NeurialGrotesk', 'Helvetica Neue', Helvetica, -apple-system,
-  system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif, 'Apple Color Emoji',
+$font-stack: 'NeurialGrotesk', 'Helvetica Neue', helvetica, -apple-system,
+  system-ui, blinkmacsystemfont, roboto, arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-stack-mono: 'Fira Code', Consolas, 'Courier New', 'Lucida Console',
-  Courier, monospace;
+$font-stack-mono: 'Fira Code', consolas, 'Courier New', 'Lucida Console',
+  courier, monospace;
 
 // Colors
 $brand-primary: #36489e;
 $brand-primary-dark: #031156;
 $brand-primary-light: rgba(54, 72, 158, 0.15);
+$brand-primary-lighter: rgba(54, 72, 158, 0.05);
 $brand-secondary: #f97f30;
+$brand-secondary-light: rgba(249, 127, 48, 0.33);
 $brand-secondary-dark: darken($brand-secondary, 20%);
 $brand-tertiary: #fbcb5f;
 
@@ -20,31 +22,43 @@ $brand-gray-light: #dfe0eb;
 $brand-gray-dark: #9fa2b4;
 $brand-green: #068e86;
 $brand-yellow: #fbcb60;
+$brand-red: #c33;
 
 $background-color: #fefefe;
+
+// System Colors
+$system-info: #333;
+$system-info-bg: #e5e7ee;
+$system-success: $brand-green;
+$system-success-bg: #cde8e7;
+$system-success-bg-light: rgba(6, 142, 134, 0.1);
+$system-warning: #8b7133;
+$system-warning-bg: #fdedca;
+$system-error: $brand-red;
+$system-error-bg: #f4d6d6;
 
 // Text/Typography
 $text-color: $brand-primary;
 $link-color: $brand-secondary;
 
 // Font Sizes
-$font-size-xs: 10px;
-$font-size-sm: 12px;
-$font-size-base: 14px;
-$font-size-lg: 16px;
-$font-size-xl: 18px;
-$font-size-xl-2: 24px;
-$font-size-xl-3: 32px;
-$font-size-xl-4: 48px;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-xl-2: 36px;
+$font-size-xl-3: 48px;
+$font-size-xl-4: 54px;
 
 // Line Heights
-$line-height-xs: 14px;
-$line-height-sm: 16px;
-$line-height-base: 18px;
-$line-height-lg: 24px;
-$line-height-xl: 32px;
-$line-height-xl-2: 48px;
-$line-height-xl-3: 64px;
+$line-height-xs: 16px;
+$line-height-sm: 22px;
+$line-height-base: 26px;
+$line-height-lg: 28px;
+$line-height-xl: 36px;
+$line-height-xl-2: 50px;
+$line-height-xl-3: 60px;
 $line-height-xl-4: 72px;
 
 // Spacing
@@ -95,7 +109,8 @@ $nav-height: 60px;
 $nav-height-md: 120px;
 
 // Z Layers
-$layer-modal: 100;
+$layer-modal: 200;
+$layer-popup: 100;
 
 // Form Controls
 $form-control-height-base: 36px;

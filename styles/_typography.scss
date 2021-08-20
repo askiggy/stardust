@@ -8,22 +8,13 @@ body,
 input,
 button,
 p {
-  font-family: 'NeurialGrotesk', 'Helvetica Neue', Helvetica, -apple-system,
-    system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'NeurialGrotesk', 'Helvetica Neue', Helvetica, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: $line-height-base;
   overflow-wrap: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h2,
-h3 {
-  &:first-child {
-    margin-top: 0;
-  }
 }
 
 h1,
@@ -76,6 +67,13 @@ h5,
   line-height: $line-height-base;
 }
 
+h2,
+h3 {
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
 p,
 ul,
 ol {
@@ -114,16 +112,19 @@ abbr {
     font-size: $font-size-xl-2;
     line-height: $line-height-xl-2;
   }
+
   h2,
   .text-xl-2 {
     font-size: $font-size-xl;
     line-height: $line-height-xl;
   }
+
   h3,
   .text-xl {
     font-size: $font-size-lg;
     line-height: $line-height-lg;
   }
+
   h4,
   .text-lg {
     font-size: $font-size-base;

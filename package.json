@@ -8,7 +8,13 @@
     "fonts"
   ],
   "author": "Iggy <support@askiggy.com>",
+  "scripts": {
+    "lint": "eslint . --fix; stylelint './**/*.{css,scss,sass}' --fix",
+    "lint:js": "eslint .",
+    "lint:styles": "stylelint './**/*.{css,scss,sass}'"
+  },
   "dependencies": {
+    "react": "^17.0.2",
     "webpack": "^5.35.0"
   },
   "devDependencies": {
