@@ -23,7 +23,7 @@ button,
   height: $button-height;
   justify-content: center;
   line-height: 1.2;
-  padding: $spacing-xs $spacing-lg;
+  padding: $spacing-xs $spacing-base;
   text-align: center;
   transition-duration: $animate-fast;
   transition-property: border, color, opacity, background-color, box-shadow, outline;
@@ -220,6 +220,8 @@ a.btn-primary,
   border-radius: $button-height-lg / 2;
   font-size: $font-size-base;
   height: $button-height-lg;
+  padding-left: $spacing-xl;
+  padding-right: $spacing-xl;
 }
 
 .btn-sm {

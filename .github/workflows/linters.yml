@@ -1,0 +1,21 @@
+name: Lint
+
+on: push
+
+jobs:
+  linters:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache Node Modules
+        uses: actions/cache@v2
+        with:
+          path: ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Lint Stylesheets
+        run: yarn lint:styles

@@ -1,4 +1,4 @@
-name: '@askiggy/stardust'
+name: 'Publish'
 
 on:
   release:
@@ -12,8 +12,18 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn install
-      # - run: yarn test
+
+      - name: Cache Node Modules
+        uses: actions/cache@v2
+        with:
+          path: ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Lint Stylesheets
+        run: yarn lint:styles
 
   publish-gpr:
     needs: build
