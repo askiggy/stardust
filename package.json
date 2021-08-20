@@ -1,6 +1,6 @@
 {
   "name": "@askiggy/stardust",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Iggy frontend component library and styleguide",
   "main": "index.js",
   "files": [
