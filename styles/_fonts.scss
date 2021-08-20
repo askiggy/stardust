@@ -22,6 +22,27 @@
 @font-face {
   font-display: swap;
   font-family: 'NeurialGrotesk';
-  font-weight: 700;
+  font-weight: 600;
   src: url('../fonts/neurial-grotesk/NeurialGrotesk-Bold.otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'NeurialGrotesk';
+  font-weight: 700;
+  src: url('../fonts/neurial-grotesk/NeurialGrotesk-Extrabold.otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBMPlexMono';
+  font-weight: 400;
+  src: url('../fonts/ibm-plex-mono/IBMPlexMono-Regular.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'IBMPlexMono';
+  font-weight: 500;
+  src: url('../fonts/ibm-plex-mono/IBMPlexMono-Medium.ttf');
 }

@@ -90,6 +90,29 @@ abbr {
   text-decoration: none;
 }
 
+pre,
+code {
+  font-family: 'IBMPlexMono', 'Lucida Console', Monaco, monospace;
+  font-size: 13px;
+}
+
+code {
+  background-color: #fff;
+  border-radius: $border-radius-sm;
+  color: $brand-black;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 4px;
+}
+
+pre {
+  display: block;
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+
 .text-light {
   font-weight: 300;
 }
