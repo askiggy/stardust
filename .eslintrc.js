@@ -14,6 +14,7 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['react'],
+  ignorePatterns: ['dist/**/*'],
   rules: {
     camelcase: 'off',
     'class-methods-use-this': 'warn',

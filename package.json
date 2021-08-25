@@ -2,22 +2,39 @@
   "name": "@askiggy/stardust",
   "version": "0.0.9",
   "description": "Iggy frontend component library and styleguide",
-  "main": "index.js",
-  "files": [
-    "styles",
-    "fonts"
-  ],
-  "author": "Iggy <support@askiggy.com>",
+  "homepage": "https://github.com/askiggy/stardust",
+  "license": "UNLICENSED",
+  "author": "Iggy <help@askiggy.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/askiggy/stardust.git"
+  },
+  "main": "dist/components/index.js",
+  "module": "dist/components/index.js",
   "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production babel src package.json --out-dir dist --copy-files",
     "lint": "eslint . --fix; stylelint './**/*.{css,scss,sass}' --fix",
     "lint:js": "eslint .",
     "lint:styles": "stylelint './**/*.{css,scss,sass}'"
   },
   "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "prop-types": "^15.7.2",
+    "raw-loader": "^4.0.2",
     "react": "^17.0.2",
+    "react-css-modules": "^4.7.11",
+    "rollup-plugin-copy": "^3.4.0",
+    "sass": "^1.38.1",
+    "sass-loader": "^12.1.0",
     "webpack": "^5.35.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "css-loader": "^6.2.0",
     "eslint": "^7.7.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-import-resolver-alias": "^1.1.2",
@@ -27,9 +44,11 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.0.8",
     "prettier": "^2.2.1",
+    "style-loader": "^3.2.1",
     "stylelint": "^13.12.0",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.19.0"
+    "stylelint-scss": "^3.19.0",
+    "webpack-cli": "^4.8.0"
   }
 }
