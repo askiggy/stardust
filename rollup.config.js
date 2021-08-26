@@ -23,7 +23,7 @@ const config = {
         {
           src: 'package.json',
           dest: 'dist',
-          transform: (contents, filename) => contents.toString()
+          transform: (contents) => contents.toString()
             .replace(/dist\//g, '')
         }
       ]

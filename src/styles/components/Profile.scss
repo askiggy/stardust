@@ -1,16 +1,16 @@
 @import '../variables';
 
 .profile {
-  display: flex;
   align-items: center;
+  display: flex;
   text-align: center;
 }
 
 .profilePicture {
   border-radius: 50%;
   height: 42px;
-  width: 42px;
   order: 1;
+  width: 42px;
 }
 
 .profileName {
