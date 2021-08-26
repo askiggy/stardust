@@ -16,13 +16,11 @@ const config = {
       exclude: 'node_modules/**',
       babelHelpers: 'bundled'
     }),
-    del({ targets: ['dist/*'] }),
+    del({ targets: ['dist/*', 'styles/components/*'] }),
     copy({
       targets: [
-        { src: 'package.json', dest: 'dist' },
-        { src: 'fonts', dest: 'dist' },
-        { src: 'components/**/*.scss', dest: 'styles/components' },
-        { src: 'styles', dest: 'dist' }
+        { src: 'src/components', dest: 'dist' },
+        { src: 'src/components/**/*.scss', dest: 'dist/styles/components' }
       ]
     })
   ],

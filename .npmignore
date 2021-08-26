@@ -1,9 +1,0 @@
-.github
-docs
-node_modules
-.eslintrc.js
-.gitignore
-.node-version
-.prettierignore
-.stylelintrc
-prettierrc.json

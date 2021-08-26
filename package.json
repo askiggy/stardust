@@ -1,6 +1,6 @@
 {
   "name": "@askiggy/stardust",
-  "version": "0.0.9",
+  "version": "0.1.0-alpha.8",
   "description": "Iggy frontend component library and styleguide",
   "homepage": "https://github.com/askiggy/stardust",
   "license": "UNLICENSED",
@@ -11,22 +11,25 @@
   },
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
-  "source": "components/index.js",
-  "files": ["./dist"],
+  "source": "src/components/index.js",
+  "files": [ "dist", "styles", "fonts" ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production babel src package.json --out-dir dist --copy-files",
-    "build:rollup": "rollup -c",
+    "dev": "react-scripts start",
+    "build": "rollup -c",
     "lint": "eslint . --fix; stylelint './**/*.{css,scss,sass}' --fix",
     "lint:js": "eslint .",
     "lint:styles": "stylelint './**/*.{css,scss,sass}'"
   },
   "dependencies": {
     "@rollup/plugin-babel": "^5.3.0",
-    "rollup-plugin-delete": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
     "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4"
   },
   "devDependencies": {
@@ -43,15 +46,27 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.0.8",
     "prettier": "^2.2.1",
+    "rollup": "^2.56.3",
     "stylelint": "^13.12.0",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.19.0",
-    "rollup": "^2.56.3"
+    "stylelint-scss": "^3.19.0"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
