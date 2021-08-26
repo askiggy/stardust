@@ -16,11 +16,17 @@ const config = {
       exclude: 'node_modules/**',
       babelHelpers: 'bundled'
     }),
-    del({ targets: ['dist/*', 'styles/components/*'] }),
+    del({ targets: ['dist/*'] }),
     copy({
       targets: [
-        { src: 'src/components', dest: 'dist' },
-        { src: 'src/components/**/*.scss', dest: 'dist/styles/components' }
+        { src: ['styles', 'fonts'], dest: 'dist' },
+        { src: 'src/components/**/*.scss', dest: 'dist/components' },
+        {
+          src: 'package.json',
+          dest: 'dist',
+          transform: (contents, filename) => contents.toString()
+            .replace(/dist\//g, '')
+        }
       ]
     })
   ],

@@ -1,6 +1,6 @@
 {
   "name": "@askiggy/stardust",
-  "version": "0.1.0-alpha.8",
+  "version": "0.1.0-alpha.12",
   "description": "Iggy frontend component library and styleguide",
   "homepage": "https://github.com/askiggy/stardust",
   "license": "UNLICENSED",
@@ -12,7 +12,11 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "source": "src/components/index.js",
-  "files": [ "dist", "styles", "fonts" ],
+  "files": [
+    "dist",
+    "styles",
+    "fonts"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
@@ -25,6 +29,7 @@
   },
   "dependencies": {
     "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-replace": "^3.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3",
