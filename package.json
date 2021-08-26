@@ -1,6 +1,6 @@
 {
   "name": "@askiggy/stardust",
-  "version": "0.1.0-alpha.12",
+  "version": "0.1.0-alpha.13",
   "description": "Iggy frontend component library and styleguide",
   "homepage": "https://github.com/askiggy/stardust",
   "license": "UNLICENSED",
@@ -23,6 +23,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "build": "rollup -c",
+    "build:publish": "yarn build; cd dist; npm publish; cd ..",
     "lint": "eslint . --fix; stylelint './**/*.{css,scss,sass}' --fix",
     "lint:js": "eslint .",
     "lint:styles": "stylelint './**/*.{css,scss,sass}'"
@@ -35,7 +36,8 @@
     "react-scripts": "^4.0.3",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-delete": "^2.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "sass": "^1.38.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",

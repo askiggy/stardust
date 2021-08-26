@@ -19,7 +19,7 @@ const config = {
     del({ targets: ['dist/*'] }),
     copy({
       targets: [
-        { src: ['styles', 'fonts'], dest: 'dist' },
+        { src: ['src/styles', 'src/fonts'], dest: 'dist' },
         { src: 'src/components/**/*.scss', dest: 'dist/components' },
         {
           src: 'package.json',

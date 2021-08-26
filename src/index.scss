@@ -1,0 +1,17 @@
+@import 'styles/global';
+
+body {
+  background-color: #fcfcfc;
+}
+
+
+.component {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px 0;
+
+  h2 {
+    margin-top: 0;
+  }
+}
