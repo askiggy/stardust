@@ -20,7 +20,6 @@ const config = {
     copy({
       targets: [
         { src: ['src/styles', 'src/fonts'], dest: 'dist' },
-        { src: 'src/components/**/*.scss', dest: 'dist/components' },
         {
           src: 'package.json',
           dest: 'dist',
