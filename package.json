@@ -21,7 +21,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server",
     "build": "react-scripts build",
     "dev": "react-scripts start",
     "rollup": "rollup -c",
