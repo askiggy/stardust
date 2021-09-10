@@ -70,6 +70,11 @@ h5,
   line-height: $line-height-base;
 }
 
+h6 {
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+}
+
 h2,
 h3 {
   &:first-child {

@@ -2,6 +2,12 @@ import React from 'react';
 import Branding from './components/Branding';
 import Profile from './components/Profile';
 
+const code = `<script>
+  (function(){
+    alert('hello world');
+  })();
+</script>`;
+
 function App() {
   return (
     <div className='App container'>
@@ -65,8 +71,15 @@ function App() {
           </div>
 
           <div className='component'>
-            <h3>Paragraph</h3>
+            <h3>p</h3>
             <p>Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+          </div>
+
+          <div className='component'>
+            <h3>code</h3>
+            <pre>
+              <code>{code}</code>
+            </pre>
           </div>
 
         </div>
