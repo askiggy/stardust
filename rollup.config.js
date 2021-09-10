@@ -7,7 +7,7 @@ import pkg from './package.json';
 const config = {
   input: pkg.source,
   output: [
-    { file: pkg.main, format: 'cjs' },
+    { file: pkg.commonjs, format: 'cjs' },
     { file: pkg.module, format: 'esm' }
   ],
   plugins: [
