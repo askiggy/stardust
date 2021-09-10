@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $button-color: $brand-primary;
 $button-height: $form-control-height-base;
 $button-height-lg: 52px;
@@ -15,7 +17,7 @@ button,
   align-items: center;
   background-color: #fff;
   border: 1px solid currentColor;
-  border-radius: $button-height / 2;
+  border-radius: math.div($button-height, 2);
   color: $button-color;
   display: inline-flex;
   font-size: $font-size-sm;
@@ -223,7 +225,7 @@ a.btn-primary,
 }
 
 .btn-lg {
-  border-radius: $button-height-lg / 2;
+  border-radius: math.div($button-height-lg, 2);
   font-size: $font-size-base;
   height: $button-height-lg;
   padding-left: $spacing-xl;

@@ -2,7 +2,6 @@
   "name": "@askiggy/stardust",
   "version": "0.1.0-alpha.14",
   "description": "Iggy frontend component library and styleguide",
-  "homepage": "https://github.com/askiggy/stardust",
   "license": "UNLICENSED",
   "author": "Iggy <help@askiggy.com>",
   "repository": {
