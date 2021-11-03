@@ -134,36 +134,50 @@ function App() {
 
       <div className='section system'>
         <h2>System Message</h2>
-        <div className='component'>
-
+        <div className='minimal component'>
+          <h3 className='text-element'>.system-message</h3>
           <div className='system-message'>
             <b>Default</b> – <a href='/'>Etiam porta</a> sem malesuada magna mollis euismod.
           </div>
-
+        </div>
+        <div className='minimal component'>
+          <h3 className='text-element'>.info.system-message</h3>
           <div className='info system-message'>
             <b>Info</b> – <a href='/'>Etiam porta</a> sem malesuada magna mollis euismod.
           </div>
-
+        </div>
+        <div className='minimal component'>
+          <h3 className='text-element'>.success.system-message</h3>
           <div className='success system-message'>
             <b>Success</b> – <a href='/'>Etiam porta</a> sem malesuada magna mollis euismod.
           </div>
-
+        </div>
+        <div className='minimal component'>
+          <h3 className='text-element'>.warning.system-message</h3>
           <div className='warning system-message'>
             <b>Warning</b> – <a href='/'>Etiam porta</a> sem malesuada magna mollis euismod.
           </div>
-
+        </div>
+        <div className='minimal component'>
+          <h3 className='text-element'>.error.system-message</h3>
           <div className='error system-message'>
             <b>Error</b> – <a href='/'>Etiam porta</a> sem malesuada magna mollis euismod.
           </div>
-
+        </div>
+        <div className='minimal component'>
+          <h3 className='text-element'>.text-success.system-message</h3>
           <div className='text-success system-message'>
             <b>Success text</b> – <a href='/'>Etiam porta</a> sem malesuada magna mollis euismod.
           </div>
-
+        </div>
+        <div className='minimal component'>
+          <h3 className='text-element'>.text-warning.system-message</h3>
           <div className='text-warning system-message'>
             <b>Warning text</b> – <a href='/'>Etiam porta</a> sem malesuada magna mollis euismod.
           </div>
-
+        </div>
+        <div className='minimal component'>
+          <h3 className='text-element'>.text-error.system-message</h3>
           <div className='text-error system-message'>
             <b>Error text</b> – <a href='/'>Etiam porta</a> sem malesuada magna mollis euismod.
           </div>

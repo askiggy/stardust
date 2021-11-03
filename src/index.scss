@@ -23,6 +23,12 @@ body {
   &.tint-light {
     background-color: $brand-primary-light;
   }
+
+  &.minimal {
+    background-color: transparent;
+    box-shadow: none;
+    padding: $spacing-xs 0;
+  }
 }
 
 .grid {
