@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logo from './iggy-logo.svg';
 
 function Branding({ className, href, src }) {
+  const logo = '/logo/iggy-logo.svg';
   return (
     <div className={`logo ${className}`}>
       { href ? (
