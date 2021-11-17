@@ -4,8 +4,14 @@ The Iggy frontend component library and styleguide.
 
 ## Installation
 
+With yarn
 ```
 yarn add @askiggy/stardust
+```
+
+With npm
+```
+npm install @askiggy/stardust
 ```
 
 ## Usage
