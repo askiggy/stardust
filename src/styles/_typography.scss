@@ -39,6 +39,10 @@ h2,
   margin-bottom: $spacing-base;
 }
 
+h2 {
+  margin-top: $spacing-lg;
+}
+
 h3,
 .text-xl {
   font-size: $font-size-xl;
@@ -47,6 +51,8 @@ h3,
 
 h3 {
   font-weight: 400;
+  margin-bottom: $spacing-base;
+  margin-top: $spacing-lg;
 
   &.text-lg {
     font-weight: 600;
@@ -54,8 +60,11 @@ h3 {
 }
 
 h4,
-h5 {
-  font-weight: 600;
+h5,
+h6 {
+  font-weight: 500;
+  margin-bottom: $spacing-sm;
+  margin-top: $spacing-lg;
 }
 
 h4,
