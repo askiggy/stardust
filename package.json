@@ -1,6 +1,6 @@
 {
   "name": "@askiggy/stardust",
-  "version": "0.2.0-pre.4",
+  "version": "0.2.0-pre.5",
   "description": "Iggy frontend component library and styleguide",
   "license": "UNLICENSED",
   "author": "Iggy <help@askiggy.com>",
@@ -55,6 +55,7 @@
     "rollup": "^2.56.3",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-generate-package-json": "^3.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "stylelint": "^13.12.0",
     "stylelint-config-standard": "^22.0.0",
