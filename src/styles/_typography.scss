@@ -34,8 +34,6 @@ h6 {
   }
 }
 
-
-
 h1,
 .text-xl-3 {
   font-size: $font-size-xl-4;
@@ -99,8 +97,8 @@ h3 {
 p,
 ul,
 ol {
-  margin-top: $spacing-base;
   margin-bottom: 0;
+  margin-top: $spacing-base;
 
   &:first-child {
     margin-top: 0;
@@ -158,8 +156,8 @@ pre code {
   border-radius: $border-radius-base;
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.066);
   display: block;
-  white-space: pre;
   padding: $spacing-xs;
+  white-space: pre;
 }
 
 blockquote {

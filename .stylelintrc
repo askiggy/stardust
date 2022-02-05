@@ -11,6 +11,7 @@
     "comment-empty-line-before": "always",
     "declaration-colon-newline-after": "always-multi-line",
     "max-nesting-depth": 3,
+    "no-descending-specificity": null,
     "order/properties-alphabetical-order": true,
     "selector-pseudo-class-no-unknown": [
       true, { "ignorePseudoClasses": [ "global" ] }
