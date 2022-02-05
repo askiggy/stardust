@@ -23,6 +23,10 @@ body {
   &.tint-dark {
     background-color: $brand-primary-dark;
     color: #fff;
+
+    h2, h3 {
+      color: #fff;
+    }
   }
 
   &.tint-light {

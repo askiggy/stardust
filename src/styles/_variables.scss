@@ -39,29 +39,30 @@ $system-error: $brand-red;
 $system-error-bg: #f4d6d6;
 
 // Text/Typography
-$text-color: $brand-primary;
-$link-color: $brand-secondary;
+$text-color: $brand-black;
+$link-color: $brand-primary;
+$link-hover-color: $brand-secondary;
 
 // Font Sizes
 $font-size-xs: 10px;
 $font-size-sm: 12px;
-$font-size-base: 14px;
-$font-size-lg: 16px;
-$font-size-xl: 18px;
-$font-size-xl-2: 24px;
-$font-size-xl-3: 32px;
-$font-size-xl-4: 48px;
+$font-size-base: 15px;
+$font-size-lg: 18px;
+$font-size-xl: 22px;
+$font-size-xl-2: 26px;
+$font-size-xl-3: 31px;
+$font-size-xl-4: 37px;
 
 // Line Heights
-$line-height-xs: 18px;
-$line-height-sm: 20px;
-$line-height-base: 24px;
-$line-height-lg: 32px;
-$line-height-xl: 32px;
-$line-height-xl-2: 32px;
-$line-height-xl-3: 48px;
-$line-height-xl-4: 64px;
-$line-height-relative: 1.725em;
+$line-height-xs: 12px;
+$line-height-sm: 15px;
+$line-height-base: 18px;
+$line-height-lg: 22px;
+$line-height-xl: 26px;
+$line-height-xl-2: 31px;
+$line-height-xl-3: 37px;
+$line-height-xl-4: 45px;
+$line-height-relative: 1.6rem;
 
 // Spacing
 $spacing-xs: 6px;

@@ -2,7 +2,6 @@ a,
 .btnAsLink {
   border-bottom: 1px solid transparent;
   color: $link-color;
-  text-decoration: none;
   transition-duration: $animate-fast;
   transition-property: color, opacity, border;
   transition-timing-function: ease;
@@ -10,6 +9,25 @@ a,
   &:hover,
   &:active,
   &:focus {
-    text-decoration: underline;
+    color: $link-hover-color;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  a {
+    color: inherit;
+    text-decoration: inherit;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $link-hover-color;
+      text-decoration: underline;
+    }
   }
 }
