@@ -72,7 +72,7 @@ function App() {
 
           <div className='element component'>
             <h3 className='text-element'>p</h3>
-            <p>Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+            <p>Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
           </div>
 
           <div className='component'>
@@ -81,7 +81,6 @@ function App() {
               <code>{code}</code>
             </pre>
           </div>
-
         </div>
       </div>
 
