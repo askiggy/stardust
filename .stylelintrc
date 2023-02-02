@@ -11,11 +11,13 @@
     "comment-empty-line-before": "always",
     "property-no-unknown": null,
     "property-case": null,
-    "selector-pseudo-class-no-unknown": null,
     "declaration-colon-newline-after": "always-multi-line",
     "max-nesting-depth": 3,
     "no-descending-specificity": null,
     "order/properties-alphabetical-order": true,
+    "selector-pseudo-class-no-unknown": [
+      true, { "ignorePseudoClasses": [ "global", "export" ] }
+    ],
     "value-list-comma-newline-after": "never-multi-line"
   },
   "ignoreFiles": [
